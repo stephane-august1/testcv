@@ -16,7 +16,7 @@ use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Validator\Constraints\Time; //ajouter pour le form champ textType
 
 
-class MaDemoController extends Controller
+class CvController extends Controller
 {
     /**
      * @Route("/article", name="article")
@@ -26,7 +26,7 @@ class MaDemoController extends Controller
         $repo = $this->getDoctrine()->getRepository(Article::class);//creer une var repo lire article avec doctrine
         $articles = $repo->findAll();  //trouve tt les articles
 
-        return $this->render('ma_demo/article.html.twig', [
+        return $this->render('cv/article.html.twig', [
             'controller_name' => 'MaDemoController',
             'articles' => $articles   //lier article au twig
         ]);
@@ -37,7 +37,7 @@ class MaDemoController extends Controller
      */
     public function home()
     {
-        return $this->render('ma_demo/home.html.twig', [
+        return $this->render('cv/home.html.twig', [
             'controller_name' => 'MaDemoController',
         ]);
     }
@@ -75,7 +75,7 @@ class MaDemoController extends Controller
          return $this->redirectToRoute('show',[ 'id' =>$article->getId()]);
      }
 
-        return $this->render('ma_demo/new.html.twig', [
+        return $this->render('cv/new.html.twig', [
             'formArticle' => $form->createView(),
             'editMode' => $article->getId() !== null
         ]);
@@ -88,7 +88,7 @@ class MaDemoController extends Controller
     {
         $repo = $this->getDoctrine()->getRepository(Article::class);
         $articles = $repo->find($id);
-        return $this->render('ma_demo/show.html.twig', [
+        return $this->render('cv/show.html.twig', [
             'article' => $articles
         ]);
     }
