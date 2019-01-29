@@ -1,0 +1,12 @@
+{
+  "entrypoints": {
+    "./css/app": {
+      "js": [
+        "http://localhost:8080/build/runtime.js"
+      ],
+      "css": [
+        "http://localhost:8080/build/./css/app.css"
+      ]
+    }
+  }
+}

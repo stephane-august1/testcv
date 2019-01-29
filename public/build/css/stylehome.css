@@ -1,0 +1,30 @@
+@font-face {
+		font-family: waltfont;
+		src: url(/build/font/waltfont.ttf);
+}
+body
+{
+	/*background-color: #3b3737;*/
+	background-attachment: scroll;
+	background-image: url(/build/img/courgette.jpg);
+	background-repeat: no-repeat;
+	background-size: 1600PX auto;
+	
+}
+.acceuil {
+	
+	/*float:right;*/
+}
+.disney{
+	font-family: waltfont;
+}
+
+
+.acceuil h1{
+	font-family:src=url(/build/font/waltfont.ttf);
+	color:rgb(235, 235, 94);
+	position: absolute;
+  	left: 25%;
+	  top: 40%;
+	background-image: linear-gradient(to right,violet, indigo,blue,green,blue,indigo,violet); 
+}
