@@ -1,0 +1,35 @@
+.container {
+
+   /* padding-right: 10px;*/
+    padding-left: 10px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  [class*=".col-"] {
+   
+  }
+  
+  .row {
+    margin-right: 10px;
+    margin-left: -10px;
+  }
+  
+ .col, .red {
+    padding-top: 8.33%;
+    border: 1px solid red;
+  }
+  
+  .col {
+    border: 1px solid red;
+   background-color: black;
+   
+  }
+  nav{
+      margin-right: 0;
+      position: fixed;
+      background-position-x: 50%;
+      margin-top: 0;
+      height: auto;
+  }
+ 

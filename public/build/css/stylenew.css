@@ -1,12 +1,13 @@
 body
 {
 	
-	color:rgb(175, 34, 34);
+	color:rgb(54, 36, 36);
    /* background-attachment: scroll;*/
    
    background-image:center;
-   background-color: rgb(39, 31, 31);
-   background-image:linear-gradient(to right,rgb(0, 124, 128),rgb(28, 151, 160), rgb(214, 236, 227));
+   background-size: 80%;
+  /* background-color:antiquewhite;*/
+  
 	
  /*  background-image: url(/build/img/image1.jpg) ;*/
    /*	img alt="image1" align="middle" style="opacity:0.5" */
@@ -15,7 +16,7 @@ body
 
 h2{
     position: absolute;
-    color:whitesmoke;
+    color:black;
     align:middle;
     margin-left: 35%;
     margin-top: 40px;
@@ -23,4 +24,7 @@ h2{
 }
 article{
  align-content: center;
+
+background-color: rgb(204, 189, 169);
+
 }
