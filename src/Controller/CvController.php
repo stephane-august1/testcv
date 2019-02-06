@@ -31,7 +31,15 @@ class CvController extends Controller
             'articles' => $articles   //lier article au twig
         ]);
     }
-
+/**
+     * @Route("/base", name="base")
+     */
+    public function base()
+    {
+        return $this->render('base.html.twig', [
+            'controller_name' => 'MaDemoController',
+        ]);
+    }
     /**
      * @Route("/", name="home")
      */
@@ -41,6 +49,7 @@ class CvController extends Controller
             'controller_name' => 'MaDemoController',
         ]);
     }
+   
     /**
      * @Route("/news", name="news")
      * @Route("news/{id}",name="blog_edit")
