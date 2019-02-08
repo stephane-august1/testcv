@@ -51,22 +51,25 @@ class __TwigTemplate_b798cc0ca83b228ca6c9dd58f74c0a613f0fb0406619650e4d521f44153
 
         // line 3
         echo "    <link rel=\"stylesheet\" href=\"";
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/css/stylehome.css"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/css/perso/stylehome.css"), "html", null, true);
         echo "\">
-        <div class=\"container\">       
+             
         
-            
-             <h2>Mon Title</h2> 
+            <div class=\"content\">
+            <span class=\"GreatVibes\"> <h1>Mon Title</h1> </span>
          
-                  <div class=\"centre\">
+                  
                           <p>
-                              <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, ad quibusdam soluta eveniet iste quo rem amet itaque impedit? Quas sit laboriosam atque aperiam rem? Maiores omnis sint beatae amet!</span></p>
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, ad quibusdam soluta eveniet iste quo rem amet itaque impedit? Quas sit laboriosam atque aperiam rem? Maiores omnis sint beatae amet!</p><span class=\"special\">
+                              avant<hr></span>
                              <p> <span>Ipsum cumque doloribus porro, dolorem magni iure quasi quaerat quam dolore assumenda veniam animi qui fuga molestias asperiores eum facere alias nulla. Hic similique aperiam vero vel. Ipsum, odio fugiat!</span>
                               <span>Alias error deleniti magnam sequi commodi possimus. </span>
-                              <hr>
-                          <p>
+                              
+                             </p>
+                          
+
                           </div>
-                </div>                
+                              
             
             
         
@@ -106,21 +109,24 @@ class __TwigTemplate_b798cc0ca83b228ca6c9dd58f74c0a613f0fb0406619650e4d521f44153
     {
         return new Twig_Source("{% extends 'base.html.twig' %}
 {% block body %}
-    <link rel=\"stylesheet\" href=\"{{asset('build/css/stylehome.css')}}\">
-        <div class=\"container\">       
+    <link rel=\"stylesheet\" href=\"{{asset('build/css/perso/stylehome.css')}}\">
+             
         
-            
-             <h2>Mon Title</h2> 
+            <div class=\"content\">
+            <span class=\"GreatVibes\"> <h1>Mon Title</h1> </span>
          
-                  <div class=\"centre\">
+                  
                           <p>
-                              <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, ad quibusdam soluta eveniet iste quo rem amet itaque impedit? Quas sit laboriosam atque aperiam rem? Maiores omnis sint beatae amet!</span></p>
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, ad quibusdam soluta eveniet iste quo rem amet itaque impedit? Quas sit laboriosam atque aperiam rem? Maiores omnis sint beatae amet!</p><span class=\"special\">
+                              avant<hr></span>
                              <p> <span>Ipsum cumque doloribus porro, dolorem magni iure quasi quaerat quam dolore assumenda veniam animi qui fuga molestias asperiores eum facere alias nulla. Hic similique aperiam vero vel. Ipsum, odio fugiat!</span>
                               <span>Alias error deleniti magnam sequi commodi possimus. </span>
-                              <hr>
-                          <p>
+                              
+                             </p>
+                          
+
                           </div>
-                </div>                
+                              
             
             
         

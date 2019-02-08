@@ -44,16 +44,30 @@ class __TwigTemplate_04173cc5b1147f98e116855a554a003a5218a202ba979d4c29bd716e84a
         $this->displayBlock('title', $context, $blocks);
         // line 8
         echo "            </title>
-<link href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css\" rel=\"stylesheet\">
-<link href=\"https://bootswatch.com/4/cerulean/bootstrap.css\" rel=\"stylesheet\">
-  <link href=\"";
+<link href=\"";
+        // line 9
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("../build/css/bootstrap/bootstrap4.2.1.css"), "html", null, true);
+        echo "
+\" rel=\"stylesheet\">
+<link href=\"";
         // line 11
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/css/stylebase.css"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("../build/css/bootstrap/cerulean.css"), "html", null, true);
         echo "\" rel=\"stylesheet\">
+
+
+<link rel=\"stylesheet\" href=\"";
+        // line 14
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("../build/css/awesome.v5.71.css"), "html", null, true);
+        echo "\">
+  <link href=\"";
+        // line 15
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("../build/css/perso/stylebase.css"), "html", null, true);
+        echo "\" rel=\"stylesheet\">
+  
                 ";
-        // line 12
+        // line 17
         $this->displayBlock('stylesheets', $context, $blocks);
-        // line 13
+        // line 18
         echo "</head>
     <body>
                 
@@ -74,29 +88,45 @@ class __TwigTemplate_04173cc5b1147f98e116855a554a003a5218a202ba979d4c29bd716e84a
                             </li>
                             <li class=\"nav-item\">
                                 <a class=\"nav-link\" href=\"/article\">Article</a>
+                                
                             </li>
                             <li class=\"nav-item\">
                                 <a class=\"nav-link\" href=\"/news\">news</a>
                             </li>
+                            <li class=\"nav-item\">
+                                <a  href=\"http://github.com\"><i class=\"fab fa-github fa-3x\"></i></a>
+                                <i class=\"fas fa-snowman fa-rotate-90\"></i>
+                                <i class=\"fas fa-fb fa-5x\"></i>
+                            </li>
+                          
+                            
+                               
+
+                           
                         </ul>
                     </div>
             </nav>
-                        
+            <i class=\"fas fa-spinner fa-spin\"></i>
+            <i class=\"fas fa-circle-notch fa-spin\"></i>
+            <i class=\"fas fa-sync fa-spin\"></i>
+            <i class=\"fas fa-cog fa-spin\"></i>
+            <i class=\"fas fa-spinner fa-pulse\"></i>
+            <i class=\"fas fa-star-christmas fa-spin\"></i>      
             </div>
       ";
-        // line 43
+        // line 64
         echo "          ";
-        // line 44
+        // line 65
         echo "             
               ";
-        // line 46
+        // line 67
         echo "             
           ";
-        // line 48
+        // line 69
         echo "          
         
       ";
-        // line 51
+        // line 72
         echo "
            
   
@@ -107,30 +137,32 @@ class __TwigTemplate_04173cc5b1147f98e116855a554a003a5218a202ba979d4c29bd716e84a
 
 
     <script src=\"";
-        // line 60
+        // line 81
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/javascript/jquerymini.js"), "html", null, true);
         echo "\"></script>
     <script src=\"";
-        // line 61
+        // line 82
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/javascript/popper.js"), "html", null, true);
         echo "\"></script>
     <script src=\"";
-        // line 62
+        // line 83
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/javascript/bootstrap4.js"), "html", null, true);
         echo "\"></script>
                                               <script src=\"";
-        // line 63
+        // line 84
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/javascript/perso.js"), "html", null, true);
         echo "\"></script> 
+    <script defer src=\"https://use.fontawesome.com/releases/v5.7.1/js/all.js\" integrity=\"sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7\" crossorigin=\"anonymous\"></script>
+    
                                               
    
 ded
           <div class=\"container\">
    
                     ";
-        // line 69
+        // line 92
         $this->displayBlock('body', $context, $blocks);
-        // line 72
+        // line 95
         echo "        </div>
     <footer>
         <div class=\" bg-dark navbar-expand-lg navbar-nav mr-auto\">
@@ -175,9 +207,9 @@ ded
            
         
                     ";
-        // line 115
+        // line 138
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 116
+        // line 139
         echo "              
           </body></html>";
         
@@ -206,7 +238,7 @@ ded
 
     }
 
-    // line 12
+    // line 17
     public function block_stylesheets($context, array $blocks = [])
     {
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
@@ -224,7 +256,7 @@ ded
 
     }
 
-    // line 69
+    // line 92
     public function block_body($context, array $blocks = [])
     {
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
@@ -233,7 +265,7 @@ ded
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        // line 70
+        // line 93
         echo "    
                     ";
         
@@ -244,7 +276,7 @@ ded
 
     }
 
-    // line 115
+    // line 138
     public function block_javascripts($context, array $blocks = [])
     {
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
@@ -273,7 +305,7 @@ ded
 
     public function getDebugInfo()
     {
-        return array (  248 => 115,  237 => 70,  228 => 69,  210 => 12,  192 => 7,  181 => 116,  179 => 115,  134 => 72,  132 => 69,  123 => 63,  119 => 62,  115 => 61,  111 => 60,  100 => 51,  96 => 48,  93 => 46,  90 => 44,  88 => 43,  57 => 13,  55 => 12,  51 => 11,  46 => 8,  44 => 7,  36 => 2,  33 => 1,);
+        return array (  280 => 138,  269 => 93,  260 => 92,  242 => 17,  224 => 7,  213 => 139,  211 => 138,  166 => 95,  164 => 92,  153 => 84,  149 => 83,  145 => 82,  141 => 81,  130 => 72,  126 => 69,  123 => 67,  120 => 65,  118 => 64,  71 => 18,  69 => 17,  64 => 15,  60 => 14,  54 => 11,  49 => 9,  46 => 8,  44 => 7,  36 => 2,  33 => 1,);
     }
 
     public function getSourceContext()
@@ -286,9 +318,14 @@ ded
             <title>
                 {% block title %}Welcome!{% endblock %}
             </title>
-<link href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css\" rel=\"stylesheet\">
-<link href=\"https://bootswatch.com/4/cerulean/bootstrap.css\" rel=\"stylesheet\">
-  <link href=\"{{asset('build/css/stylebase.css')}}\" rel=\"stylesheet\">
+<link href=\"{{asset('../build/css/bootstrap/bootstrap4.2.1.css')}}
+\" rel=\"stylesheet\">
+<link href=\"{{asset('../build/css/bootstrap/cerulean.css')}}\" rel=\"stylesheet\">
+
+
+<link rel=\"stylesheet\" href=\"{{asset('../build/css/awesome.v5.71.css')}}\">
+  <link href=\"{{asset('../build/css/perso/stylebase.css')}}\" rel=\"stylesheet\">
+  
                 {% block stylesheets %} {% endblock %}
 </head>
     <body>
@@ -310,14 +347,30 @@ ded
                             </li>
                             <li class=\"nav-item\">
                                 <a class=\"nav-link\" href=\"/article\">Article</a>
+                                
                             </li>
                             <li class=\"nav-item\">
                                 <a class=\"nav-link\" href=\"/news\">news</a>
                             </li>
+                            <li class=\"nav-item\">
+                                <a  href=\"http://github.com\"><i class=\"fab fa-github fa-3x\"></i></a>
+                                <i class=\"fas fa-snowman fa-rotate-90\"></i>
+                                <i class=\"fas fa-fb fa-5x\"></i>
+                            </li>
+                          
+                            
+                               
+
+                           
                         </ul>
                     </div>
             </nav>
-                        
+            <i class=\"fas fa-spinner fa-spin\"></i>
+            <i class=\"fas fa-circle-notch fa-spin\"></i>
+            <i class=\"fas fa-sync fa-spin\"></i>
+            <i class=\"fas fa-cog fa-spin\"></i>
+            <i class=\"fas fa-spinner fa-pulse\"></i>
+            <i class=\"fas fa-star-christmas fa-spin\"></i>      
             </div>
       {# <div class=\"row no-gutters\"> #}
           {# <div class=\"col-1 \"> #}
@@ -341,6 +394,8 @@ ded
     <script src=\"{{asset('build/javascript/popper.js')}}\"></script>
     <script src=\"{{asset('build/javascript/bootstrap4.js')}}\"></script>
                                               <script src=\"{{asset('build/javascript/perso.js')}}\"></script> 
+    <script defer src=\"https://use.fontawesome.com/releases/v5.7.1/js/all.js\" integrity=\"sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7\" crossorigin=\"anonymous\"></script>
+    
                                               
    
 ded
