@@ -66,6 +66,6 @@ class __TwigTemplate_83922be8109706f5ac7f57aa78d28a45d21cc957792408ce8feae3a2ba3
     public function getSourceContext()
     {
         return new Twig_Source("{% block panel '' %}
-", "@WebProfiler/Profiler/ajax_layout.html.twig", "/Users/stephaneaugustin/Documents/symfony/projet/testcv/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/ajax_layout.html.twig");
+", "@WebProfiler/Profiler/ajax_layout.html.twig", "/Users/stephaneaugustin/Documents/symfony/dev/test2/testcv/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/ajax_layout.html.twig");
     }
 }

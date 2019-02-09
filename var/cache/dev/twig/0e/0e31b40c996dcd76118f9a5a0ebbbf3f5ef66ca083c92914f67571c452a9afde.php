@@ -139,6 +139,6 @@ class __TwigTemplate_b798cc0ca83b228ca6c9dd58f74c0a613f0fb0406619650e4d521f44153
         
   
         {% endblock %}
-    ", "cv/home.html.twig", "/Users/stephaneaugustin/Documents/symfony/projet/testcv/templates/cv/home.html.twig");
+    ", "cv/home.html.twig", "/Users/stephaneaugustin/Documents/symfony/dev/test2/testcv/templates/cv/home.html.twig");
     }
 }

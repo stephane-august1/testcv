@@ -65,6 +65,6 @@ class __TwigTemplate_c2c78bc4796fc6224e12fa0e9226c3e08c5b02a34171b3a5d6245b32fbf
         return new Twig_Source("<?xml version=\"1.0\" encoding=\"{{ _charset }}\" ?>
 
 <error code=\"{{ status_code }}\" message=\"{{ status_text }}\" />
-", "@Twig/Exception/error.xml.twig", "/Users/stephaneaugustin/Documents/symfony/projet/testcv/vendor/symfony/twig-bundle/Resources/views/Exception/error.xml.twig");
+", "@Twig/Exception/error.xml.twig", "/Users/stephaneaugustin/Documents/symfony/dev/test2/testcv/vendor/symfony/twig-bundle/Resources/views/Exception/error.xml.twig");
     }
 }

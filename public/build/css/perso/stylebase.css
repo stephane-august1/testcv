@@ -40,8 +40,8 @@ background-color: aqua;
   .col-11,.col-12 {
   text-align: center;
    padding: 8.33%;
-   border:1px solid grey;
-   
+   border:1px solid red;
+   background-position: auto auto;
    background-attachment: fixed;
    background-color:none;
    }
@@ -51,7 +51,7 @@ background-color: aqua;
     margin-left:1%;
     width:100%;
     
-   
+    
    
     position: relative;
     /*border:1px solid pink;*/
@@ -59,11 +59,11 @@ background-color: aqua;
   
 .nav-link .p-2{
 background-size: 2% 2%;
- }
+}
   
 
   nav{
-      margin-right: 0;
+      margin-right: 1.5%;
       position: fixed;
       color:rgb(118, 118, 182) !important;
       width: 100%;
@@ -74,34 +74,36 @@ background-size: 2% 2%;
  
   footer  {
     margin-left: 0.5%;
-    margin-right: 0.5%;
+    margin-right: 1.5%;
     width: 99%;
-  
-  bottom: 0.5%;
-   
+  height: auto;
+  max-height: 13%;
+  bottom: 0%;
+ 
    text-align: center;
     display: inline-block;
-    position: absolute;
+    position: fixed; 
 }
 .droite{
   position: relative;
  
-  margin-left: 10%;
+  margin-left: 4%;
   border:1px solid black;
 }
 
-li ,footer{
-    display: block;
-   color:rgb(118, 118, 182) !important;
-   
-    width: 99%;
-    margin-left: 0.5%;
-    border:1px dotted yellow;
-    font-weight: 1px;
-    font-weight: 0.2em;
-}
-
-
+.extra{
+  
+   text-align: center; 
+   margin-left: 10%; 
+   margin-right: 10%; 
+  position: relative;
+  width: auto;
+/*
+.extra ,li{padding:1px;
+  border: 1px dotted green; 
+   width:auto; 
+  position: relative;
+}*/
 .widget {
   display: block;
   border: 1px solid red;

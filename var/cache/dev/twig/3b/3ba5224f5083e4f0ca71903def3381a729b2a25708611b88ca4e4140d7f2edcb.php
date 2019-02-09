@@ -56,7 +56,7 @@ class __TwigTemplate_e24431ebd7f491f194f815244d551a3d9721bc46ef345936d01c15e2196
         echo "    <head>
         <link rel=\"stylesheet\" href=";
         // line 5
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("/build/css/stylenew.css"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("/build/css/perso/stylenew.css"), "html", null, true);
         echo "></head>
         <body>
             <section class=\"articles\">
@@ -134,7 +134,7 @@ class __TwigTemplate_e24431ebd7f491f194f815244d551a3d9721bc46ef345936d01c15e2196
 {% form_theme formArticle 'bootstrap_4_layout.html.twig' %}
 {% block body %}
     <head>
-        <link rel=\"stylesheet\" href={{asset('/build/css/stylenew.css')}}></head>
+        <link rel=\"stylesheet\" href={{asset('/build/css/perso/stylenew.css')}}></head>
         <body>
             <section class=\"articles\">
                 <article>
@@ -160,6 +160,6 @@ class __TwigTemplate_e24431ebd7f491f194f815244d551a3d9721bc46ef345936d01c15e2196
                 </section>
             </body>
         {% endblock %}
-    ", "cv/new.html.twig", "/Users/stephaneaugustin/Documents/symfony/projet/testcv/templates/cv/new.html.twig");
+    ", "cv/new.html.twig", "/Users/stephaneaugustin/Documents/symfony/dev/test2/testcv/templates/cv/new.html.twig");
     }
 }

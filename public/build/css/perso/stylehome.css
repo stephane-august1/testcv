@@ -1,80 +1,92 @@
 @font-face {
-		font-family: waltfont;
-		src: url(/build/fonts/waltfont.ttf);
+	font-family: waltfont;
+	src: url(/build/fonts/waltfont.ttf);
 }
+
 @font-face {
 	font-family: IMMORTAL;
 	src: url(/build/fonts/IMMRTLT_.ttf);
 }
+
 @font-face {
 	font-family: rain;
 	src: url(/build/fonts/TheRain.ttf);
 }
-@font-face {
-	font-family:GreatVibes;
-	src:url(/build/fonts/AlexBrush-Regular.ttf);
-}	
 
-body
-{
+@font-face {
+	font-family: GreatVibes;
+	src: url(/build/fonts/AlexBrush-Regular.ttf);
+}
+
+body {
 	/*background-color: #3b3737;*/
 	background-attachment: fixed;
 	/* background-image: url(/build/img/aubergine.png); */
-	
+
 	background-position-y: 14%;
 	background-position-x: 70%;
 	background-color: black;
-	/* background-color: #faebd7;*/ 
-	
- 
- 
+	/* background-color: #faebd7;*/
+
+
+
 }
-hr,.special {
+
+hr,
+.special {
 	border: 1px solid green;
 	/*height: 3px !important;*/
 	width: 2%;
-	
+
 	/* background-size: 2% auto !important; */
 	/* background-repeat: no-repeat !important; */
 	/* background-image:url(/build/img/image3.jpg) !important;  */
 }
-.centre{margin-top: 200px;
+
+.centre {
+	margin-top: 200px;
 	margin-left: 1px;
 	background-position-x: 40%;
 	background-position-y: 20%;
 }
 
-.content{
+.content {
 	border: 1px solid yellow;
 	max-height: 100%;
 	width: 90%;
-    text-overflow: ellipsis;
-    overflow: scroll;
- 
- 
+	text-overflow: ellipsis;
+	/* overflow: scroll; */
+
+
 }
-.fond{
+
+.fond {
 	width: 100%;
 	height: 5%;
 	margin-right: 0px;
 	margin-top: 1px;
 }
-h2,.rain{
+
+h2,
+.rain {
 	font: 2em rain;
-	color:grey;
+	color: grey;
 }
-.disney{
+
+.disney {
 	font-family: 1em waltfont;
-color:blue;
+	color: blue;
 	background-size: 10% auto;
-	
+
 }
-h1,.GreatVibes{
-	font-family: GreatVibes ;
-	color:orange;
-	font-size: auto;
+
+h1,
+.GreatVibes {
+	font-family: GreatVibes;
+	color: orange;
+	font-size: 2em;
 }
-  
+
 .acceuil {
 
 	/*border: 1px solid blue;*/
@@ -82,7 +94,7 @@ h1,.GreatVibes{
 	width: 99%;
 	margin-right: 75%;
 	position: absolute;
-  	left: 25%;
-	 /* top: 40%;
+	left: 25%;
+	/* top: 40%;
 	background-image: linear-gradient(to right,violet, indigo,blue,green,blue,indigo,violet); */
 }
