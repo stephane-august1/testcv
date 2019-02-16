@@ -1,1 +1,14 @@
+"SEND" : send
+
+#base page
 "SITE_TITLE" : Welcome
+"NAV_BAR_ITEM_1" : Home
+"NAV_BAR_ITEM_2" : Base
+"NAV_BAR_ITEM_3" : Weather
+"NAV_BAR_ITEM_4" : The Articles
+"NAV_BAR_ITEM_5" : Insert News
+"COPYRIGHT" :  copyright
+
+#home page
+"TITLE_HOME" : My Title
+"TEXT_HOME_1" : Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, ad quibusdam soluta eveniet iste quo rem amet itaque impedit? Quas sit laboriosam atque aperiam rem? Maiores omnis sint beatae amet!

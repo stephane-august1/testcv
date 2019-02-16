@@ -110,7 +110,17 @@ $catalogue = new MessageCatalogue('fr', array (
   ),
   'messages' => 
   array (
+    'SEND' => 'envoyé',
     'SITE_TITLE' => 'Bienvenue',
+    'NAV_BAR_ITEM_1' => 'Accueil',
+    'NAV_BAR_ITEM_2' => 'Base',
+    'NAV_BAR_ITEM_3' => 'Meteo',
+    'NAV_BAR_ITEM_4' => 'Article',
+    'NAV_BAR_ITEM_5' => 'Ajouter',
+    'COPYRIGHT' => 'copyright',
+    'TITLE_HOME' => 'Mon titre',
+    'TEXT_HOME_1' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, ad quibusdam soluta eveniet iste quo rem amet itaque impedit? Quas sit laboriosam atque aperiam rem? Maiores omnis sint beatae amet!',
+    'TEXT_HOME_2' => 'Ipsum cumque doloribus porro, dolorem magni iure quasi quaerat quam dolore assumenda veniam animi qui fuga molestias asperiores eum facere alias nulla. Hic similique aperiam vero vel. Ipsum, odio fugiat! <span>Alias error deleniti magnam sequi commodi possimus. </span>',
   ),
 ));
 

@@ -36,7 +36,7 @@ $a->addDumper('ini', new \Symfony\Component\Translation\Dumper\IniFileDumper());
 $a->addDumper('json', new \Symfony\Component\Translation\Dumper\JsonFileDumper());
 $a->addDumper('res', new \Symfony\Component\Translation\Dumper\IcuResFileDumper());
 
-$this->privates['console.command.translation_update'] = $instance = new \Symfony\Bundle\FrameworkBundle\Command\TranslationUpdateCommand($a, ($this->privates['translation.reader'] ?? $this->load('getTranslation_ReaderService.php')), ($this->privates['translation.extractor'] ?? $this->load('getTranslation_ExtractorService.php')), 'en', ($this->targetDirs[3].'/translations'), ($this->targetDirs[3].'/templates'));
+$this->privates['console.command.translation_update'] = $instance = new \Symfony\Bundle\FrameworkBundle\Command\TranslationUpdateCommand($a, ($this->privates['translation.reader'] ?? $this->load('getTranslation_ReaderService.php')), ($this->privates['translation.extractor'] ?? $this->load('getTranslation_ExtractorService.php')), 'fr', ($this->targetDirs[3].'/translations'), ($this->targetDirs[3].'/templates'));
 
 $instance->setName('translation:update');
 

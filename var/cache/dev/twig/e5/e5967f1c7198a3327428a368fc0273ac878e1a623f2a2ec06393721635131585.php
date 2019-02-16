@@ -79,7 +79,8 @@ class __TwigTemplate_04173cc5b1147f98e116855a554a003a5218a202ba979d4c29bd716e84a
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("home");
         echo "\">";
         echo $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("SITE_TITLE");
-        echo "</a>
+        echo "</a><button type=\"submit\" value=\"/en\" onclick=\"if (this.value) window.location.href=this.value\">en</button>
+                <button type=\"submit\" value=\"/fr\" onclick=\"if (this.value) window.location.href=this.value\">fr</button>
                 <i class=\"fas fa-spinner fa-spin\"></i>
             <i class=\"fas fa-circle-notch fa-spin\"></i>
             <i class=\"fas fa-sync fa-spin\"></i>
@@ -93,35 +94,45 @@ class __TwigTemplate_04173cc5b1147f98e116855a554a003a5218a202ba979d4c29bd716e84a
                         <ul class=\"navbar-nav mr-auto\">
                             <li class=\"nav-item active\">
                                 <a class=\"nav-link\" href=\"";
-        // line 37
+        // line 38
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("home");
-        echo "\">Home <span class=\"sr-only\">(current)</span></a>
+        echo "\">";
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("NAV_BAR_ITEM_1");
+        echo " <span class=\"sr-only\">(current)</span></a>
                                 
                             </li>
                             <li class=\"nav-item\">
                                 <a class=\"nav-link\" href=\"";
-        // line 41
+        // line 42
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("base");
-        echo "\">Base</a>
+        echo "\">";
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("NAV_BAR_ITEM_2");
+        echo "</a>
                             </li>
                             <li class=\"nav-item\">
                                 <a class=\"nav-link\" href=\"";
-        // line 44
+        // line 45
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("meteo");
-        echo "\">Meteo</a>
+        echo "\">";
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("NAV_BAR_ITEM_3");
+        echo "</a>
                             </li>
                             <li class=\"nav-item\">
                                 <a class=\"nav-link\" href=\"";
-        // line 47
+        // line 48
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("article");
-        echo "\">Article</a>
+        echo "\">";
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("NAV_BAR_ITEM_4");
+        echo "</a>
                                 
                             </li>
                             <li class=\"nav-item\">
                                 <a class=\"nav-link\" href=\"";
-        // line 51
+        // line 52
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("news");
-        echo "\">news</a>
+        echo "\">";
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("NAV_BAR_ITEM_5");
+        echo "</a>
                             </li>   
                            
                         </ul>
@@ -132,22 +143,22 @@ class __TwigTemplate_04173cc5b1147f98e116855a554a003a5218a202ba979d4c29bd716e84a
       
        
     <script src=\"";
-        // line 61
+        // line 62
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/javascript/jquerymini.js"), "html", null, true);
         echo "\"></script>
     
     <script src=\"";
-        // line 63
+        // line 64
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/javascript/popper.js"), "html", null, true);
         echo "\"></script>
    
     <script src=\"";
-        // line 65
+        // line 66
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/javascript/bootstrap4.js"), "html", null, true);
         echo "\"></script>
     <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js\"></script>
          <script src=\"";
-        // line 67
+        // line 68
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/javascript/appmeteo.js"), "html", null, true);
         echo "\"></script>  
     <script src=\"https://use.fontawesome.com/releases/v5.7.1/js/all.js\" integrity=\"sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7\" crossorigin=\"anonymous\"></script>
@@ -159,9 +170,9 @@ class __TwigTemplate_04173cc5b1147f98e116855a554a003a5218a202ba979d4c29bd716e84a
           <div class=\"container\">
    
                     ";
-        // line 76
+        // line 77
         $this->displayBlock('body', $context, $blocks);
-        // line 79
+        // line 80
         echo "        </div>
     <footer class=\"foot\">
         
@@ -188,7 +199,10 @@ class __TwigTemplate_04173cc5b1147f98e116855a554a003a5218a202ba979d4c29bd716e84a
                   <p> <a href=\"link copyright\"> <span style=\"color:whitesmoke\">
                     <i class=\"fa fa-quote-right \"  aria-hidden=\"true\"></i>--
                              
-                @copyright --<i class=\"fa fa-quote-right \"  aria-hidden=\"true\"></i></span></a></p>
+               ";
+        // line 106
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("COPYRIGHT");
+        echo " --<i class=\"fa fa-quote-right \"  aria-hidden=\"true\"></i></span></a></p>
                </li></div>
             </div></div>
                     </ul>
@@ -200,9 +214,9 @@ class __TwigTemplate_04173cc5b1147f98e116855a554a003a5218a202ba979d4c29bd716e84a
            
         
                     ";
-        // line 116
-        $this->displayBlock('javascripts', $context, $blocks);
         // line 117
+        $this->displayBlock('javascripts', $context, $blocks);
+        // line 118
         echo "              
           </body></html>";
         
@@ -249,7 +263,7 @@ class __TwigTemplate_04173cc5b1147f98e116855a554a003a5218a202ba979d4c29bd716e84a
 
     }
 
-    // line 76
+    // line 77
     public function block_body($context, array $blocks = [])
     {
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
@@ -258,7 +272,7 @@ class __TwigTemplate_04173cc5b1147f98e116855a554a003a5218a202ba979d4c29bd716e84a
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        // line 77
+        // line 78
         echo "    
                     ";
         
@@ -269,7 +283,7 @@ class __TwigTemplate_04173cc5b1147f98e116855a554a003a5218a202ba979d4c29bd716e84a
 
     }
 
-    // line 116
+    // line 117
     public function block_javascripts($context, array $blocks = [])
     {
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
@@ -298,7 +312,7 @@ class __TwigTemplate_04173cc5b1147f98e116855a554a003a5218a202ba979d4c29bd716e84a
 
     public function getDebugInfo()
     {
-        return array (  273 => 116,  262 => 77,  253 => 76,  235 => 17,  217 => 7,  206 => 117,  204 => 116,  165 => 79,  163 => 76,  151 => 67,  146 => 65,  141 => 63,  136 => 61,  123 => 51,  116 => 47,  110 => 44,  104 => 41,  97 => 37,  79 => 24,  71 => 18,  69 => 17,  64 => 15,  60 => 14,  54 => 11,  49 => 9,  46 => 8,  44 => 7,  36 => 2,  33 => 1,);
+        return array (  287 => 117,  276 => 78,  267 => 77,  249 => 17,  231 => 7,  220 => 118,  218 => 117,  204 => 106,  176 => 80,  174 => 77,  162 => 68,  157 => 66,  152 => 64,  147 => 62,  132 => 52,  123 => 48,  115 => 45,  107 => 42,  98 => 38,  79 => 24,  71 => 18,  69 => 17,  64 => 15,  60 => 14,  54 => 11,  49 => 9,  46 => 8,  44 => 7,  36 => 2,  33 => 1,);
     }
 
     public function getSourceContext()
@@ -326,7 +340,8 @@ class __TwigTemplate_04173cc5b1147f98e116855a554a003a5218a202ba979d4c29bd716e84a
      <div class=\"row no-gutters \">
         
             <nav class=\"navbar navbar-expand-lg navbar-dark bg-dark\">
-                <a class=\"navbar-brand\" href=\"{{path('home')}}\">{{'SITE_TITLE'| trans | raw}}</a>
+                <a class=\"navbar-brand\" href=\"{{path('home')}}\">{{'SITE_TITLE'| trans | raw}}</a><button type=\"submit\" value=\"/en\" onclick=\"if (this.value) window.location.href=this.value\">en</button>
+                <button type=\"submit\" value=\"/fr\" onclick=\"if (this.value) window.location.href=this.value\">fr</button>
                 <i class=\"fas fa-spinner fa-spin\"></i>
             <i class=\"fas fa-circle-notch fa-spin\"></i>
             <i class=\"fas fa-sync fa-spin\"></i>
@@ -339,21 +354,21 @@ class __TwigTemplate_04173cc5b1147f98e116855a554a003a5218a202ba979d4c29bd716e84a
                     <div class=\"collapse navbar-collapse\" id=\"navbarColor02\">
                         <ul class=\"navbar-nav mr-auto\">
                             <li class=\"nav-item active\">
-                                <a class=\"nav-link\" href=\"{{path('home')}}\">Home <span class=\"sr-only\">(current)</span></a>
+                                <a class=\"nav-link\" href=\"{{path('home')}}\">{{'NAV_BAR_ITEM_1'| trans | raw}} <span class=\"sr-only\">(current)</span></a>
                                 
                             </li>
                             <li class=\"nav-item\">
-                                <a class=\"nav-link\" href=\"{{path('base')}}\">Base</a>
+                                <a class=\"nav-link\" href=\"{{path('base')}}\">{{'NAV_BAR_ITEM_2'| trans | raw}}</a>
                             </li>
                             <li class=\"nav-item\">
-                                <a class=\"nav-link\" href=\"{{path('meteo')}}\">Meteo</a>
+                                <a class=\"nav-link\" href=\"{{path('meteo')}}\">{{'NAV_BAR_ITEM_3'| trans | raw}}</a>
                             </li>
                             <li class=\"nav-item\">
-                                <a class=\"nav-link\" href=\"{{path('article')}}\">Article</a>
+                                <a class=\"nav-link\" href=\"{{path('article')}}\">{{'NAV_BAR_ITEM_4'| trans | raw}}</a>
                                 
                             </li>
                             <li class=\"nav-item\">
-                                <a class=\"nav-link\" href=\"{{path('news')}}\">news</a>
+                                <a class=\"nav-link\" href=\"{{path('news')}}\">{{'NAV_BAR_ITEM_5'| trans | raw}}</a>
                             </li>   
                            
                         </ul>
@@ -407,7 +422,7 @@ class __TwigTemplate_04173cc5b1147f98e116855a554a003a5218a202ba979d4c29bd716e84a
                   <p> <a href=\"link copyright\"> <span style=\"color:whitesmoke\">
                     <i class=\"fa fa-quote-right \"  aria-hidden=\"true\"></i>--
                              
-                @copyright --<i class=\"fa fa-quote-right \"  aria-hidden=\"true\"></i></span></a></p>
+               {{'COPYRIGHT'| trans | raw}} --<i class=\"fa fa-quote-right \"  aria-hidden=\"true\"></i></span></a></p>
                </li></div>
             </div></div>
                     </ul>

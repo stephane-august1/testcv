@@ -21,7 +21,8 @@
      <div class="row no-gutters ">
         
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <a class="navbar-brand" href="{{path('home')}}">{{'SITE_TITLE'| trans | raw}}</a>
+                <a class="navbar-brand" href="{{path('home')}}">{{'SITE_TITLE'| trans | raw}}</a><button type="submit" value="/en" onclick="if (this.value) window.location.href=this.value">en</button>
+                <button type="submit" value="/fr" onclick="if (this.value) window.location.href=this.value">fr</button>
                 <i class="fas fa-spinner fa-spin"></i>
             <i class="fas fa-circle-notch fa-spin"></i>
             <i class="fas fa-sync fa-spin"></i>
@@ -34,21 +35,21 @@
                     <div class="collapse navbar-collapse" id="navbarColor02">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item active">
-                                <a class="nav-link" href="{{path('home')}}">Home <span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="{{path('home')}}">{{'NAV_BAR_ITEM_1'| trans | raw}} <span class="sr-only">(current)</span></a>
                                 
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{path('base')}}">Base</a>
+                                <a class="nav-link" href="{{path('base')}}">{{'NAV_BAR_ITEM_2'| trans | raw}}</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{path('meteo')}}">Meteo</a>
+                                <a class="nav-link" href="{{path('meteo')}}">{{'NAV_BAR_ITEM_3'| trans | raw}}</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{path('article')}}">Article</a>
+                                <a class="nav-link" href="{{path('article')}}">{{'NAV_BAR_ITEM_4'| trans | raw}}</a>
                                 
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{path('news')}}">news</a>
+                                <a class="nav-link" href="{{path('news')}}">{{'NAV_BAR_ITEM_5'| trans | raw}}</a>
                             </li>   
                            
                         </ul>
@@ -102,7 +103,7 @@
                   <p> <a href="link copyright"> <span style="color:whitesmoke">
                     <i class="fa fa-quote-right "  aria-hidden="true"></i>--
                              
-                @copyright --<i class="fa fa-quote-right "  aria-hidden="true"></i></span></a></p>
+               {{'COPYRIGHT'| trans | raw}} --<i class="fa fa-quote-right "  aria-hidden="true"></i></span></a></p>
                </li></div>
             </div></div>
                     </ul>

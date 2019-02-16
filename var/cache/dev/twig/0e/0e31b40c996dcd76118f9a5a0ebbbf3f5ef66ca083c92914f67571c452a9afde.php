@@ -56,16 +56,24 @@ class __TwigTemplate_b798cc0ca83b228ca6c9dd58f74c0a613f0fb0406619650e4d521f44153
              
         
     <div class=\"content\">
-        <span class=\"GreatVibes\"> <h1>Mon Title</h1> </span>
+        <span class=\"GreatVibes\"> <h1>";
+        // line 7
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("TITLE_HOME");
+        echo "</h1> </span>
          
                   
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, ad quibusdam soluta eveniet iste quo rem amet itaque impedit? Quas sit laboriosam atque aperiam rem? Maiores omnis sint beatae amet!
+            ";
+        // line 11
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("TEXT_HOME_1");
+        echo "
         </p>
         <span class=\"special\"> <hr> </span>
         <p> 
-            Ipsum cumque doloribus porro, dolorem magni iure quasi quaerat quam dolore assumenda veniam animi qui fuga molestias asperiores eum facere alias nulla. Hic similique aperiam vero vel. Ipsum, odio fugiat!
-            <span>Alias error deleniti magnam sequi commodi possimus. </span>
+            ";
+        // line 15
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("TEXT_HOME_2");
+        echo "
         </p>
     </div>
 ";
@@ -89,7 +97,7 @@ class __TwigTemplate_b798cc0ca83b228ca6c9dd58f74c0a613f0fb0406619650e4d521f44153
 
     public function getDebugInfo()
     {
-        return array (  53 => 3,  44 => 2,  15 => 1,);
+        return array (  75 => 15,  68 => 11,  61 => 7,  53 => 3,  44 => 2,  15 => 1,);
     }
 
     public function getSourceContext()
@@ -100,16 +108,15 @@ class __TwigTemplate_b798cc0ca83b228ca6c9dd58f74c0a613f0fb0406619650e4d521f44153
              
         
     <div class=\"content\">
-        <span class=\"GreatVibes\"> <h1>Mon Title</h1> </span>
+        <span class=\"GreatVibes\"> <h1>{{'TITLE_HOME'| trans | raw}}</h1> </span>
          
                   
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, ad quibusdam soluta eveniet iste quo rem amet itaque impedit? Quas sit laboriosam atque aperiam rem? Maiores omnis sint beatae amet!
+            {{'TEXT_HOME_1'| trans | raw}}
         </p>
         <span class=\"special\"> <hr> </span>
         <p> 
-            Ipsum cumque doloribus porro, dolorem magni iure quasi quaerat quam dolore assumenda veniam animi qui fuga molestias asperiores eum facere alias nulla. Hic similique aperiam vero vel. Ipsum, odio fugiat!
-            <span>Alias error deleniti magnam sequi commodi possimus. </span>
+            {{'TEXT_HOME_2'| trans | raw}}
         </p>
     </div>
 {% endblock %}

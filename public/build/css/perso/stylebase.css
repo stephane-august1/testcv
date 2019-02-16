@@ -26,6 +26,10 @@ body{
   margin-top: 0%;
   
 }
+button{
+display: block;
+}
+
 
   [class*=".col,.li"] {
   background-position: center;

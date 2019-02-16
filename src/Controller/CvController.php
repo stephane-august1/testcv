@@ -25,7 +25,7 @@ class CvController extends Controller
     public function home()
     {
         return $this->render('cv/home.html.twig', [
-            'controller_name' => 'MaDemoController',
+            'controller_name' => 'CvController',
         ]);
     }
 
@@ -35,7 +35,7 @@ class CvController extends Controller
     public function base()
     {
         return $this->render('base.html.twig', [
-            'controller_name' => 'MaDemoController',
+            'controller_name' => 'CvController',
         ]);
     }
      
