@@ -1,12 +1,11 @@
 {% extends 'base.html.twig' %}
 {% block body %}
     <link rel="stylesheet" href={{asset('/build/css/perso/styleshow.css')}}>
-        <section>
-            <article>
-                <h2>
-                    {{ article.title}}</h2>
-                <hr>
-                    <div class="metadata">
+    <section>
+        <article>
+         <h2>{{ article.title}}</h2>
+            <hr>
+             <div class="metadata">
                         Ecrit le
                         {{article.createdAt | date('d/m/Y')}}
                         à
@@ -14,7 +13,7 @@
                         dans la catégorie Politique
                         <hr position="float:left;" style="width:50%;"></div>
                         <div class="content">
-                            <img src="http://placehold.it/250x130" alt="">
+                            <img src="http://placehold.it/250x130" alt=""><br/>
                                 <img alt="" height="145px" src="{{article.image}}" width="190px">
                                     {{article.content | raw}}
                                 </div>

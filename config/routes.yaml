@@ -1,3 +1,24 @@
 #index:
 #    path: /
 #    controller: App\Controller\DefaultController::index
+index:
+  path: /{_locale}/
+  controller: App\Controller\CvController::home
+  defaults: {_locale: en}
+  requirements:
+    _locale: en|fr
+
+article:
+  path: /{_locale}/article
+  controller: App\Controller\NewsController::article
+  defaults: {_locale: en}
+  requirements:
+    _locale: en|fr
+
+meteo:
+  path: /{_locale}/meteo
+  controller: App\Controller\AppMeteoController::meteo
+  defaults: {_locale: en}
+  requirements:
+    _locale: en|fr  
+

@@ -55,33 +55,20 @@ class __TwigTemplate_b798cc0ca83b228ca6c9dd58f74c0a613f0fb0406619650e4d521f44153
         echo "\">
              
         
-            <div class=\"content\">
-            <span class=\"GreatVibes\"> <h1>Mon Title</h1> </span>
+    <div class=\"content\">
+        <span class=\"GreatVibes\"> <h1>Mon Title</h1> </span>
          
                   
-                          <p>
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, ad quibusdam soluta eveniet iste quo rem amet itaque impedit? Quas sit laboriosam atque aperiam rem? Maiores omnis sint beatae amet!</p><span class=\"special\">
-                              avant<hr></span>
-                             <p> <span>Ipsum cumque doloribus porro, dolorem magni iure quasi quaerat quam dolore assumenda veniam animi qui fuga molestias asperiores eum facere alias nulla. Hic similique aperiam vero vel. Ipsum, odio fugiat!</span>
-                              <span>Alias error deleniti magnam sequi commodi possimus. </span>
-                              
-                             </p>
-                          
-
-                          </div>
-                              
-            
-            
-        
-                 
-        
-   
-    
-       
-    
-        
-  
-        ";
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, ad quibusdam soluta eveniet iste quo rem amet itaque impedit? Quas sit laboriosam atque aperiam rem? Maiores omnis sint beatae amet!
+        </p>
+        <span class=\"special\"> <hr> </span>
+        <p> 
+            Ipsum cumque doloribus porro, dolorem magni iure quasi quaerat quam dolore assumenda veniam animi qui fuga molestias asperiores eum facere alias nulla. Hic similique aperiam vero vel. Ipsum, odio fugiat!
+            <span>Alias error deleniti magnam sequi commodi possimus. </span>
+        </p>
+    </div>
+";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -112,33 +99,20 @@ class __TwigTemplate_b798cc0ca83b228ca6c9dd58f74c0a613f0fb0406619650e4d521f44153
     <link rel=\"stylesheet\" href=\"{{asset('build/css/perso/stylehome.css')}}\">
              
         
-            <div class=\"content\">
-            <span class=\"GreatVibes\"> <h1>Mon Title</h1> </span>
+    <div class=\"content\">
+        <span class=\"GreatVibes\"> <h1>Mon Title</h1> </span>
          
                   
-                          <p>
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, ad quibusdam soluta eveniet iste quo rem amet itaque impedit? Quas sit laboriosam atque aperiam rem? Maiores omnis sint beatae amet!</p><span class=\"special\">
-                              avant<hr></span>
-                             <p> <span>Ipsum cumque doloribus porro, dolorem magni iure quasi quaerat quam dolore assumenda veniam animi qui fuga molestias asperiores eum facere alias nulla. Hic similique aperiam vero vel. Ipsum, odio fugiat!</span>
-                              <span>Alias error deleniti magnam sequi commodi possimus. </span>
-                              
-                             </p>
-                          
-
-                          </div>
-                              
-            
-            
-        
-                 
-        
-   
-    
-       
-    
-        
-  
-        {% endblock %}
-    ", "cv/home.html.twig", "/Users/stephaneaugustin/Documents/symfony/dev/test2/testcv/templates/cv/home.html.twig");
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, ad quibusdam soluta eveniet iste quo rem amet itaque impedit? Quas sit laboriosam atque aperiam rem? Maiores omnis sint beatae amet!
+        </p>
+        <span class=\"special\"> <hr> </span>
+        <p> 
+            Ipsum cumque doloribus porro, dolorem magni iure quasi quaerat quam dolore assumenda veniam animi qui fuga molestias asperiores eum facere alias nulla. Hic similique aperiam vero vel. Ipsum, odio fugiat!
+            <span>Alias error deleniti magnam sequi commodi possimus. </span>
+        </p>
+    </div>
+{% endblock %}
+    ", "cv/home.html.twig", "/Users/stephaneaugustin/Documents/symfony/projet2/testcv/templates/cv/home.html.twig");
     }
 }

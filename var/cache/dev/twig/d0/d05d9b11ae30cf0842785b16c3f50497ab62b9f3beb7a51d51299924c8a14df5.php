@@ -75,7 +75,7 @@ class __TwigTemplate_b5afe40c8b30b25c8a2aa7b1d2dec5fd90b2dcd0096d4ac93f6c829bc61
                         dans la catégorie Politique
                         <hr position=\"float:left;\" style=\"width:50%;\"></div>
                         <div class=\"content\">
-                            <img src=\"http://placehold.it/250x130\" alt=\"\">
+                            <img src=\"http://placehold.it/250x130\" alt=\"\"><br/>
                                 <img alt=\"\" height=\"145px\" src=\"";
         // line 18
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["article"]) || array_key_exists("article", $context) ? $context["article"] : (function () { throw new Twig_Error_Runtime('Variable "article" does not exist.', 18, $this->source); })()), "image", []), "html", null, true);
@@ -129,13 +129,13 @@ class __TwigTemplate_b5afe40c8b30b25c8a2aa7b1d2dec5fd90b2dcd0096d4ac93f6c829bc61
                         dans la catégorie Politique
                         <hr position=\"float:left;\" style=\"width:50%;\"></div>
                         <div class=\"content\">
-                            <img src=\"http://placehold.it/250x130\" alt=\"\">
+                            <img src=\"http://placehold.it/250x130\" alt=\"\"><br/>
                                 <img alt=\"\" height=\"145px\" src=\"{{article.image}}\" width=\"190px\">
                                     {{article.content | raw}}
                                 </div>
                             </article>
                         </section>
                     {% endblock %}
-                ", "cv/show.html.twig", "/Users/stephaneaugustin/Documents/symfony/dev/test2/testcv/templates/cv/show.html.twig");
+                ", "cv/show.html.twig", "/Users/stephaneaugustin/Documents/symfony/projet2/testcv/templates/cv/show.html.twig");
     }
 }

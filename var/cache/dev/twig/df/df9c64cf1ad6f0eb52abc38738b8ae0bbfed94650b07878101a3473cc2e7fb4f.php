@@ -50,50 +50,50 @@ class __TwigTemplate_7720775f7e4014a809dfcf37c1f9afc571c6aa67d7ae0285e15a83e4dc7
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 3
-        echo "    <link rel=\"stylesheet\" href=";
+        echo " <link rel=\"stylesheet\" href=";
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("/build/css/perso/stylearticle.css"), "html", null, true);
         echo ">
-        ";
+ ";
         // line 4
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["articles"]) || array_key_exists("articles", $context) ? $context["articles"] : (function () { throw new Twig_Error_Runtime('Variable "articles" does not exist.', 4, $this->source); })()));
         foreach ($context['_seq'] as $context["_key"] => $context["article"]) {
             // line 5
-            echo "            <section>
-                <div class=\"articles\">
-                    <hr>
-                        <h2>
-                            ";
-            // line 9
+            echo "    <section>
+      <div class=\"articles\">
+                <hr>
+        <h2>";
+            // line 8
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["article"], "title", []), "html", null, true);
             echo "</h2>
-                        <hr>
-                            <div class=\"metadata\">
-                                Ecrit le
-                                ";
-            // line 13
+                <hr>
+         <div class=\"metadata\"> 
+                 Ecrit le
+            ";
+            // line 12
             echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["article"], "createdAt", []), "d/m/Y"), "html", null, true);
             echo "
-                                à ";
-            // line 14
+                    à ";
+            // line 13
             echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["article"], "createdAt", []), "H:iph"), "html", null, true);
             echo " dans la catégorie Politique
                                 <hr position=\"float:left;\" style=\"width:50%;\"></div>
                                 <div class=\"content\">
                                     <img src=\"";
-            // line 17
+            // line 16
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["article"], "image", []), "html", null, true);
-            echo "\" alt=\"\">
-                                        <img alt=\"\" height=\"145px\" src=\"/build/img/ayatollah.png\" width=\"190px\">
+            echo "\" alt=\"img article\">
+                                        <img alt=\"img deco\" height=\"145px\" src=\"/build/img/aubergine.png\" width=\"190px\">
                                             ";
-            // line 19
+            // line 18
             echo twig_get_attribute($this->env, $this->source, $context["article"], "content", []);
             echo "
                                             <a href=\"";
-            // line 20
+            // line 19
             echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("show", ["id" => twig_get_attribute($this->env, $this->source, $context["article"], "id", [])]), "html", null, true);
             echo "\" class=\"btn-primary\">
                                                 Lire la suite</a>
+                                                <input
                                         </div>
                                     </div>
                                 </div>
@@ -125,38 +125,38 @@ class __TwigTemplate_7720775f7e4014a809dfcf37c1f9afc571c6aa67d7ae0285e15a83e4dc7
 
     public function getDebugInfo()
     {
-        return array (  107 => 27,  94 => 20,  90 => 19,  85 => 17,  79 => 14,  75 => 13,  68 => 9,  62 => 5,  58 => 4,  53 => 3,  44 => 2,  15 => 1,);
+        return array (  107 => 27,  93 => 19,  89 => 18,  84 => 16,  78 => 13,  74 => 12,  67 => 8,  62 => 5,  58 => 4,  53 => 3,  44 => 2,  15 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Twig_Source("{% extends 'base.html.twig' %}
 {% block body %}
-    <link rel=\"stylesheet\" href={{asset('/build/css/perso/stylearticle.css')}}>
-        {% for article in articles %}
-            <section>
-                <div class=\"articles\">
-                    <hr>
-                        <h2>
-                            {{ article.title }}</h2>
-                        <hr>
-                            <div class=\"metadata\">
-                                Ecrit le
-                                {{ article.createdAt | date('d/m/Y')}}
-                                à {{ article.createdAt | date('H:iph')}} dans la catégorie Politique
+ <link rel=\"stylesheet\" href={{asset('/build/css/perso/stylearticle.css')}}>
+ {% for article in articles %}
+    <section>
+      <div class=\"articles\">
+                <hr>
+        <h2>{{ article.title }}</h2>
+                <hr>
+         <div class=\"metadata\"> 
+                 Ecrit le
+            {{ article.createdAt | date('d/m/Y')}}
+                    à {{ article.createdAt | date('H:iph')}} dans la catégorie Politique
                                 <hr position=\"float:left;\" style=\"width:50%;\"></div>
                                 <div class=\"content\">
-                                    <img src=\"{{ article.image }}\" alt=\"\">
-                                        <img alt=\"\" height=\"145px\" src=\"/build/img/ayatollah.png\" width=\"190px\">
+                                    <img src=\"{{ article.image }}\" alt=\"img article\">
+                                        <img alt=\"img deco\" height=\"145px\" src=\"/build/img/aubergine.png\" width=\"190px\">
                                             {{article.content | raw }}
                                             <a href=\"{{path('show',{'id':article.id})}}\" class=\"btn-primary\">
                                                 Lire la suite</a>
+                                                <input
                                         </div>
                                     </div>
                                 </div>
                             </section>
                         {% endfor %}
                     {% endblock %}
-                ", "cv/article.html.twig", "/Users/stephaneaugustin/Documents/symfony/dev/test2/testcv/templates/cv/article.html.twig");
+                ", "cv/article.html.twig", "/Users/stephaneaugustin/Documents/symfony/projet2/testcv/templates/cv/article.html.twig");
     }
 }

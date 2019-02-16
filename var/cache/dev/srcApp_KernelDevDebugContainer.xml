@@ -86,13 +86,14 @@
     <parameter key="kernel.container_class">srcApp_KernelDevDebugContainer</parameter>
     <parameter key="container.dumper.inline_class_loader">true</parameter>
     <parameter key="env(DATABASE_URL)"></parameter>
-    <parameter key="locale">en</parameter>
+    <parameter key="locale">fr</parameter>
+    <parameter key="app_locales">en|fr</parameter>
     <parameter key="fragment.renderer.hinclude.global_template"></parameter>
     <parameter key="fragment.path">/_fragment</parameter>
     <parameter key="kernel.secret">%env(APP_SECRET)%</parameter>
     <parameter key="kernel.http_method_override">true</parameter>
     <parameter key="kernel.trusted_hosts" type="collection"/>
-    <parameter key="kernel.default_locale">en</parameter>
+    <parameter key="kernel.default_locale">fr</parameter>
     <parameter key="templating.helper.code.file_link_format">null</parameter>
     <parameter key="debug.file_link_format">null</parameter>
     <parameter key="session.metadata.storage_key">_sf2_meta</parameter>
@@ -405,7 +406,7 @@
       <tag name="container.hot_path"/>
       <tag name="container.hot_path"/>
       <argument type="service" id="request_stack"/>
-      <argument>en</argument>
+      <argument>fr</argument>
       <argument type="service" id="router.default" on-invalid="ignore"/>
     </service>
     <service id="http_exception_listener" class="Symfony\Component\HttpKernel\EventListener\ExceptionListener" public="false">
@@ -615,7 +616,7 @@
       <argument type="service" id="translation.writer"/>
       <argument type="service" id="translation.reader"/>
       <argument type="service" id="translation.extractor"/>
-      <argument>en</argument>
+      <argument>fr</argument>
       <argument>/Users/stephaneaugustin/Documents/symfony/projet2/testcv/translations</argument>
       <argument>/Users/stephaneaugustin/Documents/symfony/projet2/testcv/templates</argument>
       <call method="setName">
@@ -1003,7 +1004,7 @@
     <service id="translator.default" class="Symfony\Bundle\FrameworkBundle\Translation\Translator" public="false">
       <argument type="service" id=".service_locator.yQVjGlt"/>
       <argument type="service" id="translator.formatter.default"/>
-      <argument>en</argument>
+      <argument>fr</argument>
       <argument type="collection">
         <argument key="translation.loader.php" type="collection">
           <argument>php</argument>
@@ -1095,6 +1096,7 @@
             <argument>/Users/stephaneaugustin/Documents/symfony/projet2/testcv/vendor/symfony/validator/Resources/translations/validators.en.xlf</argument>
             <argument>/Users/stephaneaugustin/Documents/symfony/projet2/testcv/vendor/symfony/form/Resources/translations/validators.en.xlf</argument>
             <argument>/Users/stephaneaugustin/Documents/symfony/projet2/testcv/vendor/symfony/security-core/Resources/translations/security.en.xlf</argument>
+            <argument>/Users/stephaneaugustin/Documents/symfony/projet2/testcv/translations/messages.en.yaml</argument>
           </argument>
           <argument key="es" type="collection">
             <argument>/Users/stephaneaugustin/Documents/symfony/projet2/testcv/vendor/symfony/validator/Resources/translations/validators.es.xlf</argument>
@@ -1122,6 +1124,7 @@
             <argument>/Users/stephaneaugustin/Documents/symfony/projet2/testcv/vendor/symfony/validator/Resources/translations/validators.fr.xlf</argument>
             <argument>/Users/stephaneaugustin/Documents/symfony/projet2/testcv/vendor/symfony/form/Resources/translations/validators.fr.xlf</argument>
             <argument>/Users/stephaneaugustin/Documents/symfony/projet2/testcv/vendor/symfony/security-core/Resources/translations/security.fr.xlf</argument>
+            <argument>/Users/stephaneaugustin/Documents/symfony/projet2/testcv/translations/messages.fr.yaml</argument>
           </argument>
           <argument key="gl" type="collection">
             <argument>/Users/stephaneaugustin/Documents/symfony/projet2/testcv/vendor/symfony/validator/Resources/translations/validators.gl.xlf</argument>
@@ -1296,7 +1299,7 @@
       </call>
       <call method="setFallbackLocales">
         <argument type="collection">
-          <argument>en</argument>
+          <argument>fr</argument>
         </argument>
       </call>
     </service>

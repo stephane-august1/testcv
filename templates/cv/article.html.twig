@@ -1,21 +1,20 @@
 {% extends 'base.html.twig' %}
 {% block body %}
-    <link rel="stylesheet" href={{asset('/build/css/perso/stylearticle.css')}}>
-        {% for article in articles %}
-            <section>
-                <div class="articles">
-                    <hr>
-                        <h2>
-                            {{ article.title }}</h2>
-                        <hr>
-                            <div class="metadata">
-                                Ecrit le
-                                {{ article.createdAt | date('d/m/Y')}}
-                                à {{ article.createdAt | date('H:iph')}} dans la catégorie Politique
+ <link rel="stylesheet" href={{asset('/build/css/perso/stylearticle.css')}}>
+ {% for article in articles %}
+    <section>
+      <div class="articles">
+                <hr>
+        <h2>{{ article.title }}</h2>
+                <hr>
+         <div class="metadata"> 
+                 Ecrit le
+            {{ article.createdAt | date('d/m/Y')}}
+                    à {{ article.createdAt | date('H:iph')}} dans la catégorie Politique
                                 <hr position="float:left;" style="width:50%;"></div>
                                 <div class="content">
-                                    <img src="{{ article.image }}" alt="">
-                                        <img alt="" height="145px" src="/build/img/ayatollah.png" width="190px">
+                                    <img src="{{ article.image }}" alt="img article">
+                                        <img alt="img deco" height="145px" src="/build/img/aubergine.png" width="190px">
                                             {{article.content | raw }}
                                             <a href="{{path('show',{'id':article.id})}}" class="btn-primary">
                                                 Lire la suite</a>

@@ -77,7 +77,9 @@ class __TwigTemplate_04173cc5b1147f98e116855a554a003a5218a202ba979d4c29bd716e84a
                 <a class=\"navbar-brand\" href=\"";
         // line 24
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("home");
-        echo "\">Bienvenue</a>
+        echo "\">";
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("SITE_TITLE");
+        echo "</a>
                 <i class=\"fas fa-spinner fa-spin\"></i>
             <i class=\"fas fa-circle-notch fa-spin\"></i>
             <i class=\"fas fa-sync fa-spin\"></i>
@@ -296,7 +298,7 @@ class __TwigTemplate_04173cc5b1147f98e116855a554a003a5218a202ba979d4c29bd716e84a
 
     public function getDebugInfo()
     {
-        return array (  271 => 116,  260 => 77,  251 => 76,  233 => 17,  215 => 7,  204 => 117,  202 => 116,  163 => 79,  161 => 76,  149 => 67,  144 => 65,  139 => 63,  134 => 61,  121 => 51,  114 => 47,  108 => 44,  102 => 41,  95 => 37,  79 => 24,  71 => 18,  69 => 17,  64 => 15,  60 => 14,  54 => 11,  49 => 9,  46 => 8,  44 => 7,  36 => 2,  33 => 1,);
+        return array (  273 => 116,  262 => 77,  253 => 76,  235 => 17,  217 => 7,  206 => 117,  204 => 116,  165 => 79,  163 => 76,  151 => 67,  146 => 65,  141 => 63,  136 => 61,  123 => 51,  116 => 47,  110 => 44,  104 => 41,  97 => 37,  79 => 24,  71 => 18,  69 => 17,  64 => 15,  60 => 14,  54 => 11,  49 => 9,  46 => 8,  44 => 7,  36 => 2,  33 => 1,);
     }
 
     public function getSourceContext()
@@ -324,7 +326,7 @@ class __TwigTemplate_04173cc5b1147f98e116855a554a003a5218a202ba979d4c29bd716e84a
      <div class=\"row no-gutters \">
         
             <nav class=\"navbar navbar-expand-lg navbar-dark bg-dark\">
-                <a class=\"navbar-brand\" href=\"{{path('home')}}\">Bienvenue</a>
+                <a class=\"navbar-brand\" href=\"{{path('home')}}\">{{'SITE_TITLE'| trans | raw}}</a>
                 <i class=\"fas fa-spinner fa-spin\"></i>
             <i class=\"fas fa-circle-notch fa-spin\"></i>
             <i class=\"fas fa-sync fa-spin\"></i>

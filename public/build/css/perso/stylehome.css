@@ -20,7 +20,7 @@ body
 	background-attachment: fixed;
 	background-image: url(/build/img/image3.jpg); 
 	background-repeat: no-repeat;
-	background-position-y: 14%;
+	background-position-y: 10%;
 	background-position-x: 70%;
 	background-color: black;
     background-size: 15%;
@@ -41,7 +41,8 @@ hr,.special {
 	margin-top:2% ;
 	width: 98%;
     text-overflow: ellipsis;
-    overflow: scroll;
+		overflow: scroll;
+		scroll-behavior: auto;
   color:rgb(155, 139, 139);
  
 }

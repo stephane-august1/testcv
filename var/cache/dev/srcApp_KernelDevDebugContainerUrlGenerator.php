@@ -20,10 +20,8 @@ class srcApp_KernelDevDebugContainerUrlGenerator extends Symfony\Component\Routi
         $this->defaultLocale = $defaultLocale;
         if (null === self::$declaredRoutes) {
             self::$declaredRoutes = array(
-        'meteo' => array(array(), array('_controller' => 'App\\Controller\\AppMeteoController::meteo'), array(), array(array('text', '/app/meteo')), array(), array()),
         'home' => array(array(), array('_controller' => 'App\\Controller\\CvController::home'), array(), array(array('text', '/')), array(), array()),
         'base' => array(array(), array('_controller' => 'App\\Controller\\CvController::base'), array(), array(array('text', '/base')), array(), array()),
-        'article' => array(array(), array('_controller' => 'App\\Controller\\NewsController::article'), array(), array(array('text', '/article')), array(), array()),
         'news' => array(array(), array('_controller' => 'App\\Controller\\NewsController::news'), array(), array(array('text', '/news')), array(), array()),
         'blog_edit' => array(array('id'), array('_controller' => 'App\\Controller\\NewsController::news'), array(), array(array('variable', '/', '[^/]++', 'id', true), array('text', '/news')), array(), array()),
         'show' => array(array('id'), array('_controller' => 'App\\Controller\\NewsController::show'), array(), array(array('variable', '/', '[^/]++', 'id', true), array('text', '/show')), array(), array()),
@@ -39,6 +37,9 @@ class srcApp_KernelDevDebugContainerUrlGenerator extends Symfony\Component\Routi
         '_profiler_router' => array(array('token'), array('_controller' => 'web_profiler.controller.router::panelAction'), array(), array(array('text', '/router'), array('variable', '/', '[^/]++', 'token', true), array('text', '/_profiler')), array(), array()),
         '_profiler_exception' => array(array('token'), array('_controller' => 'web_profiler.controller.exception::showAction'), array(), array(array('text', '/exception'), array('variable', '/', '[^/]++', 'token', true), array('text', '/_profiler')), array(), array()),
         '_profiler_exception_css' => array(array('token'), array('_controller' => 'web_profiler.controller.exception::cssAction'), array(), array(array('text', '/exception.css'), array('variable', '/', '[^/]++', 'token', true), array('text', '/_profiler')), array(), array()),
+        'index' => array(array('_locale'), array('_locale' => 'en', '_controller' => 'App\\Controller\\CvController::home'), array('_locale' => 'en|fr'), array(array('text', '/'), array('variable', '/', 'en|fr', '_locale', true)), array(), array()),
+        'article' => array(array('_locale'), array('_locale' => 'en', '_controller' => 'App\\Controller\\NewsController::article'), array('_locale' => 'en|fr'), array(array('text', '/article'), array('variable', '/', 'en|fr', '_locale', true)), array(), array()),
+        'meteo' => array(array('_locale'), array('_locale' => 'en', '_controller' => 'App\\Controller\\AppMeteoController::meteo'), array('_locale' => 'en|fr'), array(array('text', '/meteo'), array('variable', '/', 'en|fr', '_locale', true)), array(), array()),
     );
         }
     }

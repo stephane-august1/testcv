@@ -15,10 +15,8 @@ class srcApp_KernelDevDebugContainerUrlMatcher extends Symfony\Bundle\FrameworkB
     {
         $this->context = $context;
         $this->staticRoutes = array(
-            '/app/meteo' => array(array(array('_route' => 'meteo', '_controller' => 'App\\Controller\\AppMeteoController::meteo'), null, null, null, false, false, null)),
             '/' => array(array(array('_route' => 'home', '_controller' => 'App\\Controller\\CvController::home'), null, null, null, false, false, null)),
             '/base' => array(array(array('_route' => 'base', '_controller' => 'App\\Controller\\CvController::base'), null, null, null, false, false, null)),
-            '/article' => array(array(array('_route' => 'article', '_controller' => 'App\\Controller\\NewsController::article'), null, null, null, false, false, null)),
             '/news' => array(array(array('_route' => 'news', '_controller' => 'App\\Controller\\NewsController::news'), null, null, null, false, false, null)),
             '/_profiler' => array(array(array('_route' => '_profiler_home', '_controller' => 'web_profiler.controller.profiler::homeAction'), null, null, null, true, false, null)),
             '/_profiler/search' => array(array(array('_route' => '_profiler_search', '_controller' => 'web_profiler.controller.profiler::searchAction'), null, null, null, false, false, null)),
@@ -45,6 +43,13 @@ class srcApp_KernelDevDebugContainerUrlMatcher extends Symfony\Bundle\FrameworkB
                             .'|(*:201)'
                         .')'
                     .')'
+                    .'|/(en|fr)(?'
+                        .'|(*:222)'
+                        .'|/(?'
+                            .'|article(*:241)'
+                            .'|meteo(*:254)'
+                        .')'
+                    .')'
                 .')/?$}sDu',
         );
         $this->dynamicRoutes = array(
@@ -57,6 +62,9 @@ class srcApp_KernelDevDebugContainerUrlMatcher extends Symfony\Bundle\FrameworkB
             178 => array(array(array('_route' => '_profiler_exception', '_controller' => 'web_profiler.controller.exception::showAction'), array('token'), null, null, false, false, null)),
             191 => array(array(array('_route' => '_profiler_exception_css', '_controller' => 'web_profiler.controller.exception::cssAction'), array('token'), null, null, false, false, null)),
             201 => array(array(array('_route' => '_profiler', '_controller' => 'web_profiler.controller.profiler::panelAction'), array('token'), null, null, false, true, null)),
+            222 => array(array(array('_route' => 'index', '_locale' => 'en', '_controller' => 'App\\Controller\\CvController::home'), array('_locale'), null, null, true, true, null)),
+            241 => array(array(array('_route' => 'article', '_locale' => 'en', '_controller' => 'App\\Controller\\NewsController::article'), array('_locale'), null, null, false, false, null)),
+            254 => array(array(array('_route' => 'meteo', '_locale' => 'en', '_controller' => 'App\\Controller\\AppMeteoController::meteo'), array('_locale'), null, null, false, false, null)),
         );
     }
 }

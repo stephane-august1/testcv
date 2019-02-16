@@ -11,15 +11,18 @@ body
 	
 	
 }
+.articles{
+	color:red;
+}
 body article{
 	/*background-image:linear-gradient(to right,violet, indigo);*/
-	color:blanchedalmond;
+	color:red;
 	
 	position: absolute;
 }
 section{
 color:blanchedalmond;
-margin-left: 200px;
+margin-left: 2%;
 }
 hr.metadata{
 	width: 50%;
