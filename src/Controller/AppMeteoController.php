@@ -19,11 +19,11 @@ use Symfony\Component\Validator\Constraints\Time; //ajouter pour le form champ t
 class AppMeteoController extends AbstractController
 {
     /**
-     * @Route("/app/meteo", name="meteo")
+     * @Route("app/meteo", name="meteo")
      */
     public function meteo()
     {
-        return $this->render('cv/meteo.html.twig', [
+        return $this->render('appmeteo/meteo.html.twig', [
             'controller_name' => 'AppMeteoController',
         ]);
     }

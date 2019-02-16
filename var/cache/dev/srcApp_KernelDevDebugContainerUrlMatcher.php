@@ -15,6 +15,7 @@ class srcApp_KernelDevDebugContainerUrlMatcher extends Symfony\Bundle\FrameworkB
     {
         $this->context = $context;
         $this->staticRoutes = array(
+            '/app/meteo' => array(array(array('_route' => 'meteo', '_controller' => 'App\\Controller\\AppMeteoController::meteo'), null, null, null, false, false, null)),
             '/' => array(array(array('_route' => 'home', '_controller' => 'App\\Controller\\CvController::home'), null, null, null, false, false, null)),
             '/base' => array(array(array('_route' => 'base', '_controller' => 'App\\Controller\\CvController::base'), null, null, null, false, false, null)),
             '/article' => array(array(array('_route' => 'article', '_controller' => 'App\\Controller\\NewsController::article'), null, null, null, false, false, null)),

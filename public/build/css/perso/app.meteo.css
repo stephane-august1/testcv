@@ -23,23 +23,23 @@ body{
     background-repeat: no-repeat;
     /* background-size: 100% 60%; */
     background-size: cover;
-   
+   border: 1px solid blue;
 }
 section{
     text-align: center;
-    height: 28vh;
+    height: 100%;
     width: 100%;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: top;
      /*float: left; */
- border: 1px solid pink;
+ border: 2px solid pink;
     
 /* background-size: ; */
 }
 .first{
-    height:15vh;
+    height:55vh;
     margin-left: 0%;
 }
 .second{
@@ -55,37 +55,39 @@ h1{
     text-shadow:11px rgb(247, 232, 35);
     
 }
-i{ border :1px solid orange;
-    color:rgb(113, 153, 33);
+i{  margin-top: 0.2%;
+    /* border :1px solid orange; */
+    color:yellow;
     font-size: 6em;
-    background-position: 20px 2px;
+    background-position: 2% 2%;
     height: 60%;
-    padding: 14px;
+    padding: 1%;
     line-height: 0;
+    margin-top: 0%;
+    display: block;
+    margin-left: 30%;
     
 }
-h3{color:rgb(113, 153, 33);
-    font-size: 30px;
+h3,#ville{color:black;
+    font-size: 1.5em;
     text-decoration: underline;
+    height: 50%;;
+    /* border:1px solid red; */
+    width: 100%;
+   
+    margin-left: 16.5%;
+    
 }
 
-h2{ color:rgb(113, 153, 33);
+
+h2{ color:black;
     font-size: 2em;
-    text-decoration: underline;
+    text-decoration: none;
+    margin-left: 8%;
 }
-.tooltip{
-    opacity:0;
-    position:absolute;
-    top:0;
-    color: black;
-    background-color: grey;
-    border-radius: 5px;
-    padding:10px;
-    
-    font-size: 1em;
-    transition:opacity .3s,top .5s;
-}
-h1:hover .tooltip{
+
+
+.form-group:hover {
     top:80px;
     opacity: 1;
 }
@@ -94,6 +96,9 @@ h1:hover .tooltip{
     color:rgb(43, 53, 7);
     font-size: 5em;
     line-height:  3em;
+}
+button{
+    margin-left: 33%;
 }
 .form{
     border: 1px solid blue;

@@ -20,6 +20,7 @@ class srcApp_KernelDevDebugContainerUrlGenerator extends Symfony\Component\Routi
         $this->defaultLocale = $defaultLocale;
         if (null === self::$declaredRoutes) {
             self::$declaredRoutes = array(
+        'meteo' => array(array(), array('_controller' => 'App\\Controller\\AppMeteoController::meteo'), array(), array(array('text', '/app/meteo')), array(), array()),
         'home' => array(array(), array('_controller' => 'App\\Controller\\CvController::home'), array(), array(array('text', '/')), array(), array()),
         'base' => array(array(), array('_controller' => 'App\\Controller\\CvController::base'), array(), array(array('text', '/base')), array(), array()),
         'article' => array(array(), array('_controller' => 'App\\Controller\\NewsController::article'), array(), array(array('text', '/article')), array(), array()),
