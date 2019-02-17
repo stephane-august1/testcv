@@ -53,36 +53,35 @@ class __TwigTemplate_b5afe40c8b30b25c8a2aa7b1d2dec5fd90b2dcd0096d4ac93f6c829bc61
         echo "    <link rel=\"stylesheet\" href=";
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("/build/css/perso/styleshow.css"), "html", null, true);
         echo ">
-        <section>
-            <article>
-                <h2>
-                    ";
-        // line 7
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["article"]) || array_key_exists("article", $context) ? $context["article"] : (function () { throw new Twig_Error_Runtime('Variable "article" does not exist.', 7, $this->source); })()), "title", []), "html", null, true);
+    <section>
+        <article>
+         <h2>";
+        // line 6
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["article"]) || array_key_exists("article", $context) ? $context["article"] : (function () { throw new Twig_Error_Runtime('Variable "article" does not exist.', 6, $this->source); })()), "title", []), "html", null, true);
         echo "</h2>
-                <hr>
-                    <div class=\"metadata\">
+            <hr>
+             <div class=\"metadata\">
                         Ecrit le
                         ";
-        // line 11
-        echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["article"]) || array_key_exists("article", $context) ? $context["article"] : (function () { throw new Twig_Error_Runtime('Variable "article" does not exist.', 11, $this->source); })()), "createdAt", []), "d/m/Y"), "html", null, true);
+        // line 10
+        echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["article"]) || array_key_exists("article", $context) ? $context["article"] : (function () { throw new Twig_Error_Runtime('Variable "article" does not exist.', 10, $this->source); })()), "createdAt", []), "d/m/Y"), "html", null, true);
         echo "
                         à
                         ";
-        // line 13
-        echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["article"]) || array_key_exists("article", $context) ? $context["article"] : (function () { throw new Twig_Error_Runtime('Variable "article" does not exist.', 13, $this->source); })()), "createdAt", []), "H:i"), "html", null, true);
+        // line 12
+        echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["article"]) || array_key_exists("article", $context) ? $context["article"] : (function () { throw new Twig_Error_Runtime('Variable "article" does not exist.', 12, $this->source); })()), "createdAt", []), "H:i"), "html", null, true);
         echo "
                         dans la catégorie Politique
                         <hr position=\"float:left;\" style=\"width:50%;\"></div>
                         <div class=\"content\">
                             <img src=\"http://placehold.it/250x130\" alt=\"\"><br/>
                                 <img alt=\"\" height=\"145px\" src=\"";
-        // line 18
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["article"]) || array_key_exists("article", $context) ? $context["article"] : (function () { throw new Twig_Error_Runtime('Variable "article" does not exist.', 18, $this->source); })()), "image", []), "html", null, true);
+        // line 17
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["article"]) || array_key_exists("article", $context) ? $context["article"] : (function () { throw new Twig_Error_Runtime('Variable "article" does not exist.', 17, $this->source); })()), "image", []), "html", null, true);
         echo "\" width=\"190px\">
                                     ";
-        // line 19
-        echo twig_get_attribute($this->env, $this->source, (isset($context["article"]) || array_key_exists("article", $context) ? $context["article"] : (function () { throw new Twig_Error_Runtime('Variable "article" does not exist.', 19, $this->source); })()), "content", []);
+        // line 18
+        echo twig_get_attribute($this->env, $this->source, (isset($context["article"]) || array_key_exists("article", $context) ? $context["article"] : (function () { throw new Twig_Error_Runtime('Variable "article" does not exist.', 18, $this->source); })()), "content", []);
         echo "
                                 </div>
                             </article>
@@ -108,7 +107,7 @@ class __TwigTemplate_b5afe40c8b30b25c8a2aa7b1d2dec5fd90b2dcd0096d4ac93f6c829bc61
 
     public function getDebugInfo()
     {
-        return array (  85 => 19,  81 => 18,  73 => 13,  68 => 11,  61 => 7,  53 => 3,  44 => 2,  15 => 1,);
+        return array (  84 => 18,  80 => 17,  72 => 12,  67 => 10,  60 => 6,  53 => 3,  44 => 2,  15 => 1,);
     }
 
     public function getSourceContext()
@@ -116,12 +115,11 @@ class __TwigTemplate_b5afe40c8b30b25c8a2aa7b1d2dec5fd90b2dcd0096d4ac93f6c829bc61
         return new Twig_Source("{% extends 'base.html.twig' %}
 {% block body %}
     <link rel=\"stylesheet\" href={{asset('/build/css/perso/styleshow.css')}}>
-        <section>
-            <article>
-                <h2>
-                    {{ article.title}}</h2>
-                <hr>
-                    <div class=\"metadata\">
+    <section>
+        <article>
+         <h2>{{ article.title}}</h2>
+            <hr>
+             <div class=\"metadata\">
                         Ecrit le
                         {{article.createdAt | date('d/m/Y')}}
                         à
@@ -136,6 +134,6 @@ class __TwigTemplate_b5afe40c8b30b25c8a2aa7b1d2dec5fd90b2dcd0096d4ac93f6c829bc61
                             </article>
                         </section>
                     {% endblock %}
-                ", "cv/show.html.twig", "/Users/stephaneaugustin/Documents/symfony/projet2/testcv/templates/cv/show.html.twig");
+                ", "cv/show.html.twig", "/Volumes/Samsung_T5/symfony/dev/testcv/templates/cv/show.html.twig");
     }
 }

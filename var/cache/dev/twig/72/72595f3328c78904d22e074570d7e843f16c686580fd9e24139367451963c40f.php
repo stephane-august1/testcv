@@ -88,6 +88,6 @@ class __TwigTemplate_ea700b57042a834fe075f456c4c23ba135d6bf825ec960e6d520328803e
 {{ include('@Twig/Exception/traces.txt.twig', { exception: e }, with_context = false) }}
 
 {% endfor %}
-", "@Twig/Exception/exception.txt.twig", "/Users/stephaneaugustin/Documents/symfony/dev/test2/testcv/vendor/symfony/twig-bundle/Resources/views/Exception/exception.txt.twig");
+", "@Twig/Exception/exception.txt.twig", "/Volumes/Samsung_T5/symfony/dev/testcv/vendor/symfony/twig-bundle/Resources/views/Exception/exception.txt.twig");
     }
 }

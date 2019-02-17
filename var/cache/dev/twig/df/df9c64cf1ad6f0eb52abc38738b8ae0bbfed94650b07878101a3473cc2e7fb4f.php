@@ -157,6 +157,6 @@ class __TwigTemplate_7720775f7e4014a809dfcf37c1f9afc571c6aa67d7ae0285e15a83e4dc7
                             </section>
                         {% endfor %}
                     {% endblock %}
-                ", "cv/article.html.twig", "/Users/stephaneaugustin/Documents/symfony/projet2/testcv/templates/cv/article.html.twig");
+                ", "cv/article.html.twig", "/Volumes/Samsung_T5/symfony/dev/testcv/templates/cv/article.html.twig");
     }
 }

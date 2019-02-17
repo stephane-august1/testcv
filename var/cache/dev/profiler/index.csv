@@ -1711,3 +1711,13 @@ a4b8b2,127.0.0.1,GET,http://localhost:8000/en/,1550354727,,200
 4ff486,127.0.0.1,GET,http://localhost:8000/en/,1550355123,,200
 2aaaa1,127.0.0.1,GET,http://localhost:8000/fr/,1550355125,,200
 25b78c,127.0.0.1,GET,http://localhost:8000/fr/,1550355231,,200
+5920d1,127.0.0.1,GET,http://localhost:8000/,1550397079,,200
+4d3393,127.0.0.1,GET,http://localhost:8000/fr,1550397084,,301
+f515e8,127.0.0.1,GET,http://localhost:8000/fr/,1550397085,,200
+129421,127.0.0.1,GET,http://localhost:8000/en,1550397096,,301
+bbe29e,127.0.0.1,GET,http://localhost:8000/en/,1550397097,,200
+c68d4f,127.0.0.1,GET,http://localhost:8000/base,1550397225,,200
+48b6d5,127.0.0.1,GET,http://localhost:8000/fr/meteo,1550397231,,200
+e0d338,127.0.0.1,GET,http://localhost:8000/en/,1550397236,,200
+818e60,127.0.0.1,GET,http://localhost:8000/en/meteo,1550397241,,200
+250a14,127.0.0.1,GET,http://localhost:8000/en/meteo,1550397975,,200

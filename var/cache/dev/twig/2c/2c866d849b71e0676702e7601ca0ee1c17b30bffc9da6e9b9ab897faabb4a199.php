@@ -140,6 +140,6 @@ class __TwigTemplate_8fe231cc2a118f19e3d5d01d90547f7d77d5debb7ee184b0ae46b228297
     <h2>{{ messages[about].title }}</h2>
     <p>{{ messages[about].message }}</p>
 {% endblock %}
-", "@WebProfiler/Profiler/info.html.twig", "/Users/stephaneaugustin/Documents/symfony/dev/test2/testcv/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/info.html.twig");
+", "@WebProfiler/Profiler/info.html.twig", "/Volumes/Samsung_T5/symfony/dev/testcv/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/info.html.twig");
     }
 }

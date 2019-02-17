@@ -65,6 +65,6 @@ class __TwigTemplate_ae930b940538801937f0d69049154d20df530f1c6c39a836fbe940da0ac
 {{ status_code }} {{ status_text }}
 
 */
-", "@Twig/Exception/error.js.twig", "/Users/stephaneaugustin/Documents/symfony/dev/test2/testcv/vendor/symfony/twig-bundle/Resources/views/Exception/error.js.twig");
+", "@Twig/Exception/error.js.twig", "/Volumes/Samsung_T5/symfony/dev/testcv/vendor/symfony/twig-bundle/Resources/views/Exception/error.js.twig");
     }
 }

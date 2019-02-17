@@ -94,6 +94,6 @@ class __TwigTemplate_067818af1a5ad1dc0f6caf906f84f58630e298bcac018da2fd3847dccfa
     </exception>
 {% endfor %}
 </error>
-", "@Twig/Exception/exception.xml.twig", "/Users/stephaneaugustin/Documents/symfony/dev/test2/testcv/vendor/symfony/twig-bundle/Resources/views/Exception/exception.xml.twig");
+", "@Twig/Exception/exception.xml.twig", "/Volumes/Samsung_T5/symfony/dev/testcv/vendor/symfony/twig-bundle/Resources/views/Exception/exception.xml.twig");
     }
 }

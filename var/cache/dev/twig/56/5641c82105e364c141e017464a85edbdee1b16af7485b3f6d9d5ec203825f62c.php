@@ -590,6 +590,6 @@ $context["key"] == "hit_read_ratio")) {
         </div>
     {% endif %}
 {% endblock %}
-", "@WebProfiler/Collector/cache.html.twig", "/Users/stephaneaugustin/Documents/symfony/dev/test2/testcv/vendor/symfony/web-profiler-bundle/Resources/views/Collector/cache.html.twig");
+", "@WebProfiler/Collector/cache.html.twig", "/Volumes/Samsung_T5/symfony/dev/testcv/vendor/symfony/web-profiler-bundle/Resources/views/Collector/cache.html.twig");
     }
 }
